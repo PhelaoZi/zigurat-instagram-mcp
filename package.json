@@ -1,0 +1,57 @@
+{
+  "name": "zigurat-instagram-mcp",
+  "version": "1.0.0",
+  "description": "Análisis automatizado de Instagram para Zigurat CCA usando Model Context Protocol (MCP)",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.ts",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "bin": {
+    "zigurat-instagram-mcp": "./build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "instagram",
+    "analytics",
+    "zigurat",
+    "cerveza",
+    "artesanal",
+    "social-media",
+    "apify",
+    "claude",
+    "ai"
+  ],
+  "author": "Zigurat CCA <contacto@zigurat.cl>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PhelaoZi/zigurat-instagram-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhelaoZi/zigurat-instagram-mcp/issues"
+  },
+  "homepage": "https://github.com/PhelaoZi/zigurat-instagram-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "apify-client": "^2.9.3",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
