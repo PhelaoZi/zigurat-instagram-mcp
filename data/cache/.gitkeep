@@ -1,0 +1,12 @@
+# Cache Directory
+
+This directory will contain cached Instagram data to reduce API calls.
+
+## Structure
+- Profile cache: `profile-{username}-{timestamp}.json`
+- Posts cache: `posts-{username}-{timestamp}.json`
+- Hashtag cache: `hashtags-{hashtag}-{timestamp}.json`
+
+## Retention
+- Cache expires after 1 hour
+- Automatic cleanup of files older than 24 hours

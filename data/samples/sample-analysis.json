@@ -1,0 +1,95 @@
+{
+  "profile_analysis_example": {
+    "profile": {
+      "username": "zigurat_cca",
+      "fullName": "Zigurat CCA",
+      "biography": "🍺 Cerveza Artesanal con Actitud 🎸 | Cada cerveza lleva nombre de una canción emblemática | Maipú, Santiago 📍",
+      "followersCount": 2847,
+      "followingCount": 892,
+      "postsCount": 156,
+      "isVerified": false,
+      "isPrivate": false,
+      "profilePicUrl": "https://example.com/profile.jpg",
+      "category": "Food & Beverage"
+    },
+    "analytics": {
+      "engagementRate": 4.2,
+      "avgLikes": 89,
+      "avgComments": 12,
+      "postingFrequency": 3.2,
+      "bestPostingTimes": ["19:00", "20:30", "18:00"],
+      "topHashtags": [
+        "#cervezaartesanal",
+        "#zigurat",
+        "#craftbeer",
+        "#rock",
+        "#santiago"
+      ]
+    },
+    "insights": [
+      "Alto engagement rate (4.2%) comparado con industria (2.1%)",
+      "Mejor horario para postear: 7-8 PM",
+      "Posts de productos nuevos generan 40% más engagement",
+      "Hashtags con música funcionan 25% mejor que promedio"
+    ]
+  },
+  "comparison_example": {
+    "comparison": {
+      "zigurat_cca": {
+        "engagementRate": 4.2,
+        "avgLikes": 89,
+        "avgComments": 12,
+        "followersCount": 2847
+      },
+      "kunstmann_chile": {
+        "engagementRate": 2.8,
+        "avgLikes": 245,
+        "avgComments": 18,
+        "followersCount": 8932
+      }
+    },
+    "insights": {
+      "leader": "zigurat_cca",
+      "opportunities": [
+        "Zigurat tiene 50% más engagement rate que Kunstmann",
+        "Oportunidad de crecer audiencia manteniendo engagement"
+      ]
+    }
+  },
+  "prospect_analysis_example": {
+    "prospects": {
+      "barlacerveceria": {
+        "score": 87,
+        "recommendation": "high",
+        "reasoning": "Menciona cerveza artesanal en 8 posts; Alto engagement; No competidores detectados",
+        "analysis": {
+          "craftBeerMentions": 8,
+          "avgEngagement": 156,
+          "competitorMentions": []
+        }
+      }
+    },
+    "summary": {
+      "totalAnalyzed": 5,
+      "highPriority": 2,
+      "recommended": ["barlacerveceria", "cantinamontt"]
+    }
+  },
+  "content_ideas_example": {
+    "ideas": [
+      {
+        "type": "post",
+        "title": "Nueva Cerveza Spotlight",
+        "description": "Foto profesional de nueva cerveza con historia musical",
+        "suggestedHashtags": ["#nuevacerveza", "#zigurat", "#rock"],
+        "estimatedEngagement": 125,
+        "bestTimingToPost": "19:00",
+        "reasoning": "Posts de productos nuevos tienen 40% más engagement"
+      }
+    ],
+    "insights": {
+      "contentGaps": ["Más behind the scenes", "Colaboraciones con bares"],
+      "opportunities": ["Contenido viral con música", "User generated content"]
+    }
+  }
+}

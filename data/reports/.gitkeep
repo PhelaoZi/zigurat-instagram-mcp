@@ -1,0 +1,9 @@
+# Reports Directory
+
+This directory will contain generated reports from Instagram analysis.
+
+## Structure
+- Weekly reports: `weekly-YYYY-MM-DD.json`
+- Monthly reports: `monthly-YYYY-MM.json`
+- Competitive analysis: `competitive-YYYY-MM-DD.json`
+- Prospect analysis: `prospects-YYYY-MM-DD.json`
