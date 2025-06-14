@@ -18,10 +18,18 @@ import { prospectionTool } from './tools/prospection.js';
 import { contentGenerationTool } from './tools/content-generation.js';
 
 // Importar configuración
-import { CONFIG } from './config/index.js';
+import { CONFIG, validateConfig } from './config/index.js';
 
 // Cargar variables de entorno
 dotenv.config();
+
+// Validar configuración al inicio
+try {
+  validateConfig();
+} catch (error) {
+  console.error('❌ Error de configuración:', error instanceof Error ? error.message : 'Error desconocido');
+  process.exit(1);
+}
 
 // Crear servidor MCP
 const server = new Server(
@@ -105,6 +113,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function main() {
   console.error('🍺 Iniciando Zigurat Instagram MCP Server...');
   console.error(`📊 Configuración: ${CONFIG.ZIGURAT_HANDLE} vs ${CONFIG.COMPETITORS.length} competidores`);
+  console.error(`🔧 Apify configurado: ${CONFIG.APIFY_API_TOKEN ? '✅' : '❌'}`);
   
   // Crear transport stdio
   const transport = new StdioServerTransport();
@@ -117,6 +126,7 @@ async function main() {
   tools.forEach(tool => {
     console.error(`   - ${tool.name}: ${tool.description}`);
   });
+  console.error('🍺 "Cerveza con Actitud, Data con Propósito" - Zigurat CCA');
 }
 
 // Manejar errores no capturados
